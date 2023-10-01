@@ -166,18 +166,21 @@ footer ul li a {
     color: #5f6368;
 }
 
-@media(max-width:320px){
- 
+@media(max-width:425px){ 
     main {
-       width:100%;             
+       width:100%;        
        
+    }
+    main .main-logo{
+        border:1px solid red;
+        max-width: 425px;
     }
     main .main-input{
         width: 100%;
         text-align: center;
     }
     .main-input .main-input-container{
-        width: 320px;   
+        width: 423px;   
     
     }
     main .main-input input[type="text"]{
