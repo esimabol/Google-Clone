@@ -13,8 +13,7 @@ a:hover {
     text-decoration: underline;
 }
 
-header {
-    width: 100%;
+header {   
     height: 60px;
 }
 
@@ -23,8 +22,7 @@ header nav {
     justify-content: flex-end;
 }
 
-header nav .top-right-nav {
-    width:250px;
+header nav .top-right-nav {    
     height: auto;
     display: flex;
     list-style-type: none;
@@ -54,9 +52,7 @@ nav .top-right-nav img {
 main {
     margin-top: 150px;
     text-align: center;
-    
 }
-
 main .main-logo {
     width: 272px;
     margin: 0 auto;
@@ -98,6 +94,8 @@ main .main-input .search-icon, .micro-icon{
     background-size: contain;
     width:18px;
     height:18px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 
 main .main-input .search-icon {
@@ -166,4 +164,47 @@ footer .footer-right {
 footer ul li a {
     margin:10px;
     color: #5f6368;
+}
+
+@media(max-width:320px){
+ 
+    main {
+       width:100%;             
+       
+    }
+    main .main-input{
+        width: 100%;
+        text-align: center;
+    }
+    .main-input .main-input-container{
+        width: 320px;   
+    
+    }
+    main .main-input input[type="text"]{
+        max-width: 320px;      
+       
+    }
+    main .main-buttons{
+        width: 100%;               
+             
+    }
+    .main-buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    main .main-buttons button {
+       margin-right: 0;
+       padding: 0 10px;
+    }
+    footer{
+        height: 70px;
+        grid-template-columns: 100%;
+        font-size: 11px;
+    }
+    footer .footer-left, footer .footer-right{
+        width: 100%;
+    }
+    footer ul {
+        margin: 10px 0;
+    }
 }
